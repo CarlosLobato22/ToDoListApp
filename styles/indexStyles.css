@@ -1,0 +1,162 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto Flex', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+	--main-bg-color: #17223b;
+	--secundary-bg-color: #263859;
+	--thirty-bg-color: #6b778d23;
+	--fourth-bg-color: #ff6768;
+	--fonts-bg-color: white;
+	--border-bg-test: white;
+}
+/* Menu */
+.header-class {
+	display: flex;
+	width: 100%;
+	height: 50px;
+	background-color: var(--main-bg-color);
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.header-Element{
+	width: auto;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	transition: 0.5ms;
+}
+.titleElement {
+	flex-grow: 1;
+}
+.h-button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+
+/* Contenedor Principal */
+.principalContent {
+	width: 100%;
+	height: calc(100vh - 50px);
+	background-color: white;
+	display: flex;
+	gap: 20px;
+	box-sizing: border-box;
+
+}
+/* Area de Menu */
+.menuContent {
+	border: 1px;
+	background-color: var(--thirty-bg-color);
+	border-color: var(--border-bg-test);
+	border-style: solid;
+	width: 20%;
+}
+/* Contenedor de tareas */
+.taskContent {
+	width: 80%;
+	border: 1px;
+	border-color: var(--border-bg-test);
+	border-style: solid;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+/* Contenedor de mostrador de tareas */
+.contentFlex {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	height:auto;
+	border: 1px;
+	border-color: var(--border-bg-test);
+	border-style: solid;
+	border-radius: 10px;
+}
+/* .header-text {
+	display: none;
+
+} */
+.titleTask {
+	width: 100%;
+	height: auto;
+	background-color: var(--secundary-bg-color);
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+
+}
+.taskDaily {
+	background-color: rgb(250, 87, 87);	
+}
+.taskWaiting {
+	background-color: rgb(239, 250, 87);
+}
+.taskDone {
+	background-color: rgb(87, 250, 136);
+}
+
+.taskList {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+h1 {
+	color:white;
+}
