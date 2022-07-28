@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/indexStyles.css">
+    <link rel="icon" type="images/x-icon" href="images/tasksIcon.png">
+    <title>To Do List App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header-class">
+        <button class="header-Element titleElement">
+            <img src="images/tasks.png" style="width:30;height:30px">
+             <p class="header-text">To Do List App</p>
+        </button>
+        <button class="header-Element h-button">
+            <img src="images/grafico.png" style="width:30;height:30px">
+             <p class="header-text">Progreso Diario</p>
+        </button>
+        <button class="header-Element h-button">
+            <img src="images/activo.png" style="width:30;height:30px">
+             <p class="header-text">Notificaciones</p>
+        </button>
+        <button class="header-Element h-button">
+            <img src="images/programador.png" style="width:30;height:30px">
+             <p class="header-text">Usuario</p>
+        </button>
+        <button class="header-Element h-button">
+            <img src="images/log-out.png" style="width:30;height:30px">
+             <p class="header-text">Cerrar Sesion</p>
+        </button>
+    </header>
+
+    <div class="principalContent">
+        <!--Menu Principal-->
+        <div class="menuContent">
+
+        </div>
+        <!--Tareas Contenedor-->
+        <div class="taskContent">
+            <!--Tareas Estado-->
+            <div class="contentFlex ">
+                <p class="titleTask">taskDaily</p>
+                <div class="taskList taskDaily">
+                    <img  src="./images/addIconButton.png" style="width:75px;height:75px"  alt="Add Icon">
+                    <br>
+                    <h1>Agregar Tarea</h1>
+                </div>
+            </div>
+            <div class="contentFlex ">
+                <p class="titleTask">taskWaiting</p>
+                <div class="taskList taskWaiting">
+                        <img  src="./images/bolsillo.png" style="width:75px;height:75px"  alt="Add Icon">
+                    </figure>
+                </div>
+
+            </div>
+            <div class="contentFlex " >
+                <p class="titleTask">taskDone</p>
+                <div class="taskList taskDone">
+                        <img src="./images/eye.png" style="width:75px;height:75px"  alt="Add Icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
